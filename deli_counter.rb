@@ -10,7 +10,8 @@ end
 
 def take_a_number(katz_deli, new_customer)
   katz_deli << new_customer
-  katz_deli.each_with_index { |customer, i| puts "Welcome, #{customer}. You are number #{i+1} in line." }
+  line_position = array.index(new_customer)
+  puts "Welcome, #{new_customer}. You are number #{line_position+1} in line."
 end
 
 def now_serving(katz_deli)
