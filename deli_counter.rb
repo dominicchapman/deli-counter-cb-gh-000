@@ -12,3 +12,8 @@ def take_a_number(katz_deli, new_customer)
   katz_deli << new_customer
   katz_deli.each_with_index { |customer, i| puts "Welcome, #{customer}. You are number #{i+1} in line." }
 end
+
+def now_serving(katz_deli)
+  puts "Currently serving #{katz_deli[0]}."
+  katz_deli.pop
+end
