@@ -7,8 +7,6 @@ def line(katz_deli)
   end
 end
 
-def take_a_number(katz_deli, new_customer)
-  if katz_deli.length == 0
-    katz_deli << new_customer
-  end
+def take_a_number(katz_deli, new_customer)  
+  katz_deli << new_customer
 end
