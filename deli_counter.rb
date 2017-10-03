@@ -10,8 +10,8 @@ end
 
 def take_a_number(katz_deli, new_customer)
   katz_deli << new_customer
-  line_position = katz_deli.index(new_customer)
-  puts "Welcome, #{new_customer}. You are number #{line_position+1} in line."
+  line_position = (katz_deli.index(new_customer) + 1)
+  puts "Welcome, #{new_customer}. You are number #{line_position} in line."
 end
 
 def now_serving(katz_deli)
