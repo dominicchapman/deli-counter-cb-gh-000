@@ -10,7 +10,7 @@ end
 
 def take_a_number(katz_deli, new_customer)
   katz_deli << new_customer
-  line_position = array.index(new_customer)
+  line_position = katz_deli.index(new_customer)
   puts "Welcome, #{new_customer}. You are number #{line_position+1} in line."
 end
 
