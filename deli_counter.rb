@@ -9,5 +9,5 @@ end
 
 def take_a_number(katz_deli, new_customer)
   katz_deli << new_customer
-  katz.deli.each_with_index { |customer, index| puts "#{i+1}. #{customer}." }
+  katz.deli.each_with_index { |customer, index| puts "Welcome, #{customer}. You are number #{i+1} in line." }
 end
