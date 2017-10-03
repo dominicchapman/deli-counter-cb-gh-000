@@ -5,9 +5,10 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   end
+  katz_deli.each_with_index { |customer, i| puts "#{i+1}. #{customer}"}
 end
 
 def take_a_number(katz_deli, new_customer)
   katz_deli << new_customer
-  katz.deli.each_with_index { |customer, index| puts "Welcome, #{customer}. You are number #{i+1} in line." }
+  katz_deli.each_with_index { |customer, i| puts "Welcome, #{customer}. You are number #{i+1} in line." }
 end
